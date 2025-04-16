@@ -1,8 +1,7 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .logo {
@@ -19,7 +18,7 @@
 }
 
 @keyframes logo-spin {
-  from {
+  from { 
     transform: rotate(0deg);
   }
   to {

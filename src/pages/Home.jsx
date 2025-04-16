@@ -1,27 +1,23 @@
+import Navbar from '../components/Navbar.jsx'
+import '../styles/Home.css'
+
 export default function Home () {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Welcome to the Home Page 🎉</h1>
-      <p style={styles.text}>You're successfully logged in.</p>
-    </div>
-  )
-}
+    <>
+      <Navbar />
 
-const styles = {
-  container: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontFamily: 'sans-serif'
-  },
-  heading: {
-    fontSize: '2.5rem',
-    marginBottom: '1rem'
-  },
-  text: {
-    fontSize: '1.25rem',
-    color: '#555'
-  }
+      <main className='home-content'>
+        <section className='hero-section'>
+          <h1>Experience Events Like Never Before</h1>
+          <p>Browse events, pick your seat, and get your ticket instantly.</p>
+        </section>
+
+        <section className='events-gallery'>
+          <img src='https://source.unsplash.com/featured/?concert' alt='Concert' />
+          <img src='https://source.unsplash.com/featured/?sports' alt='Sports' />
+          <img src='https://source.unsplash.com/featured/?theater' alt='Theater' />
+        </section>
+      </main>
+    </>
+  )
 }
