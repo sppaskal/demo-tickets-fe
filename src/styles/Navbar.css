@@ -42,7 +42,7 @@
   .navbar-container {
     flex-direction: column;
     align-items: center;
-    padding: 1rem; /* Changed from 1rem 2rem to just 1rem (equal on all sides) */
+    padding: 1rem;
   }
 
   .navbar-logo {
@@ -67,4 +67,10 @@
     display: block;
     width: 100%;
   }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* optional: adds space between links and the button */
 }
