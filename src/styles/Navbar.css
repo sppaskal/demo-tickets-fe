@@ -72,5 +72,20 @@
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* optional: adds space between links and the button */
+  gap: 1.5rem;
 }
+
+@media (max-width: 450px) {
+  .navbar-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .logout-button {
+    width: 60%;
+    text-align: center;
+  }
+}
+
