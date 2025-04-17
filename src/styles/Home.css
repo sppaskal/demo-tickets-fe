@@ -5,7 +5,6 @@ body {
 }
 
 .home-content {
-  padding-top: 5rem;
   text-align: center;
 }
 
@@ -13,12 +12,6 @@ body {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, #ff7e5f, #feb47b);
   color: white;
-}
-
-@media (max-width: 450px) {
-  .hero-section {
-    padding-top: 15rem;
-  }
 }
 
 .hero-section h1 {
@@ -45,4 +38,11 @@ body {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }

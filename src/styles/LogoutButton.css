@@ -1,0 +1,9 @@
+/* Using mostly default button style for logout button */
+
+@media (max-width: 700px) {
+  .logout-button {
+    width: 60%;
+    min-width: 95px;
+    text-align: center;
+  }
+}

@@ -1,5 +1,5 @@
 .login-page {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@
   width: 80%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 510px) {
   .login-form {
     flex-direction: column;
     align-items: stretch;
@@ -29,6 +29,12 @@
   .login-input,
   .login-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 285px) {
+  .login-error{
+    padding-bottom: 22px;
   }
 }
 
