@@ -14,8 +14,8 @@ export default function Home () {
 
         <section className='events-gallery'>
           <img src='https://i.imgur.com/45rqlqE.jpg' alt='Concert' />
-          <img src='https://i.imgur.com/5cT9h9V.jpg' alt='Sports' />
-          <img src='https://i.imgur.com/wXiUln5.jpg' alt='Theater' />
+          <img src='https://i.imgur.com/5cT9h9V.jpg' alt='Soccer Stadium' />
+          <img src='https://i.imgur.com/wXiUln5.jpg' alt='Motorsport Crowd' />
         </section>
       </main>
     </>
