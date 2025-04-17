@@ -13,9 +13,9 @@ export default function Home () {
         </section>
 
         <section className='events-gallery'>
-          <img src='https://source.unsplash.com/featured/?concert' alt='Concert' />
-          <img src='https://source.unsplash.com/featured/?sports' alt='Sports' />
-          <img src='https://source.unsplash.com/featured/?theater' alt='Theater' />
+          <img src='https://i.imgur.com/45rqlqE.jpg' alt='Concert' />
+          <img src='https://i.imgur.com/5cT9h9V.jpg' alt='Sports' />
+          <img src='https://i.imgur.com/wXiUln5.jpg' alt='Theater' />
         </section>
       </main>
     </>
