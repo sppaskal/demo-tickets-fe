@@ -1,43 +1,43 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import '../styles/Login.css'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/Login.css';
 
-export default function Login () {
-  const [email, setEmail] = useState('')
-  const [error, setError] = useState('')
-  const navigate = useNavigate()
+export default function Login() {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setError('') // Clear any previous errors
+    e.preventDefault();
+    setError(''); // Clear any previous errors
 
     try {
-      const res = await fetch('http://localhost:3000/login', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
-      })
+        body: JSON.stringify({ email }),
+      });
 
       if (res.status === 401) {
-        setError('Invalid email. Please try again.')
-        return
+        setError('Invalid email. Please try again.');
+        return;
       }
 
       if (!res.ok) {
-        setError('Something went wrong. Please try again later.')
-        return
+        setError('Something went wrong. Please try again later.');
+        return;
       }
 
-      const data = await res.json()
+      const data = await res.json();
       if (data.token) {
-        localStorage.setItem('auth_token', data.token)
-        navigate('/home') // ✅ Redirect on success
+        localStorage.setItem('auth_token', data.token);
+        navigate('/home'); // ✅ Redirect on success
       }
     } catch (err) {
-      setError('Network error. Please check your connection.')
-      console.error(err)
+      setError('Network error. Please check your connection.');
+      console.error(err);
     }
-  }
+  };
 
   return (
     <div className='login-page'>
@@ -63,5 +63,5 @@ export default function Login () {
         </form>
       </div>
     </div>
-  )
+  );
 }
