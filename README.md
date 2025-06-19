@@ -21,7 +21,7 @@ This front-end provides a user interface for logging in, viewing events, and man
    The front-end requires the `demo-tickets-api` back-end:
 
    ```bash
-   git clone https://github.com/<your-username>/demo-tickets-api.git
+   git clone https://github.com/sppaskal/demo-tickets-api.git
    ```
 
 2. **Clone the Front-End Repository**
@@ -29,7 +29,7 @@ This front-end provides a user interface for logging in, viewing events, and man
    Clone this repository into a sibling directory:
 
    ```bash
-   git clone https://github.com/<your-username>/demo-tickets-fe.git
+   git clone https://github.com/sppaskal/demo-tickets-fe.git
    ```
 
    Directory structure:
