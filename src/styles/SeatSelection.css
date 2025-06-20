@@ -1,0 +1,127 @@
+.seat-selection-content {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.seat-selection-header {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.seat-selection-header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.seat-selection-header p {
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.success-message {
+  color: green;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.seat-grid {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.row-label {
+  width: 60px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.seat-row-seats {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seat.available {
+  background-color: #ff7e5f;
+  color: white;
+  border: 1px solid #e66b4f;
+}
+
+.seat.available:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.seat.selected {
+  background-color: #e66b4f;
+  border: 1px solid #d5593f;
+  transform: scale(1.1);
+}
+
+.seat.reserved {
+  background-color: #ccc;
+  color: #666;
+  border: 1px solid #bbb;
+  cursor: not-allowed;
+}
+
+.seat-empty {
+  width: 40px;
+  height: 40px;
+}
+
+.reserve-action {
+  padding: 1rem;
+}
+
+.reserve-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover:not(:disabled) {
+  background-color: #e66b4f;
+}
+
+.reserve-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

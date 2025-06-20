@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './pages/Login.jsx'
-import Home from './pages/Home.jsx'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login.jsx';
+import Home from './pages/Home.jsx';
 import Events from './pages/Events.jsx';
-import './App.css'
+import SeatSelection from './pages/SeatSelection.jsx';
+import './App.css';
 
-function App () {
+function App() {
   return (
     <BrowserRouter>
       <div className='app-container'>
@@ -12,10 +13,12 @@ function App () {
           <Route path='/login' element={<Login />} />
           <Route path='/home' element={<Home />} />
           <Route path='/events' element={<Events />} />
+          <Route path='/events/:eventId/seats' element={<SeatSelection />} />
+          <Route path='*' element={<Navigate to='/home' />} />
         </Routes>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
