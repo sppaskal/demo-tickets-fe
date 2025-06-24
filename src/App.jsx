@@ -3,6 +3,7 @@ import Login from './pages/Login.jsx';
 import Home from './pages/Home.jsx';
 import Events from './pages/Events.jsx';
 import SeatSelection from './pages/SeatSelection.jsx';
+import Tickets from './pages/Tickets.jsx';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/events' element={<Events />} />
           <Route path='/events/:eventId/seats' element={<SeatSelection />} />
+          <Route path='/tickets' element={<Tickets />} />
           <Route path='*' element={<Navigate to='/home' />} />
         </Routes>
       </div>
