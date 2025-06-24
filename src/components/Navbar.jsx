@@ -9,6 +9,7 @@
            <div className='navbar-logo'>DemoTickets</div>
            <div className='navbar-actions'>
              <ul className='navbar-links'>
+               <li><Link to='/home'>Home</Link></li>
                <li><Link to='/events'>Events</Link></li>
                <li><Link to='/about'>About</Link></li>
                <li><Link to='/contact'>Contact</Link></li>
