@@ -78,7 +78,12 @@ export default function Events() {
             <p>No events found for this location.</p>
           )}
           {filteredEvents.map((event) => (
-            <Link to={`/events/${event.id}/seats`} key={event.id} className='event-card-link'>
+            <Link
+              to={`/events/${event.id}/seats`}
+              key={event.id}
+              className='event-card-link'
+              state={{ name: event.name, date: event.date, location: event.location }}
+            >
               <div className='event-card'>
                 <img
                   src='https://i.imgur.com/45rqlqE.jpg'

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import '../styles/SeatSelection.css';
 
 function SeatSelection() {
   const { eventId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  const event = location.state || {};
   const [seats, setSeats] = useState([]);
   const [selectedSeat, setSelectedSeat] = useState(null);
   const [error, setError] = useState('');
@@ -128,6 +130,13 @@ function SeatSelection() {
           <h1>Select Your Seat</h1>
           <p>Choose an available seat and click "Reserve" to book.</p>
         </section>
+        {event.name && (
+          <section className='event-details'>
+            <h2>{event.name}</h2>
+            <p><strong>Date:</strong> {new Date(event.date).toLocaleDateString()}</p>
+            <p><strong>Location:</strong> {event.location}</p>
+          </section>
+        )}
         {error && <p className='error-message'>{error}</p>}
         {success && <p className='success-message'>{success}</p>}
         <section className='seat-grid'>
