@@ -1,0 +1,61 @@
+.contact-content {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-header {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.contact-header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.contact-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contact-card p strong {
+  color: #333;
+}
+
+.contact-card a {
+  color: #ff7e5f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #e66b4f;
+}
